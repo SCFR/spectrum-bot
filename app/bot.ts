@@ -19,9 +19,9 @@ bot.initAsUser(config.username, config.password).then( (isConnected) => {
     state.whenReady().then(() => {
 
         // Get a community
-        let global = state.getCommunityByName("Sibylla");
+        let global = state.getCommunityByName("General");
         // Get a lobby in that community
-        let testLobby = global.getLobbyByName("leadership");
+        let testLobby = global.getLobbyByName("fr");
 
         // Get events from Lobby
         testLobby.subscribe();
