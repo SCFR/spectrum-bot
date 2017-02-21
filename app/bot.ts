@@ -19,7 +19,7 @@ bot.initAsUser(config.username, config.password).then( (isConnected) => {
     state.whenReady().then(() => {
 
         // Get a community
-        let global = state.getCommunityByName("General");
+        let global = state.getCommunityByName("Star Citizen");
         // Get a lobby in that community
         let testLobby = global.getLobbyByName("fr");
 
